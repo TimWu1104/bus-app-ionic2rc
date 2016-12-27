@@ -1,0 +1,38 @@
+.home {
+}
+
+.floatmidright{
+	position: absolute;
+	z-index: 99;
+	right: -2px;
+	top: 50%;
+	margin-top: -22px;
+}
+.searchlist {
+	position: relative;
+
+}
+.searchlist ion-item{
+	width: 85%;
+}
+@media screen and (min-width: 768px) {
+	.searchlist ion-item {
+		width: 93%;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.searchlist ion-item {
+		width: 97%;
+	}
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.busname{
+	font-weight: bolder;
+	font-size: 20px;
+	text-align: left;
+}

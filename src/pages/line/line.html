@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+     <ion-select class="headerselect">
+      <ion-option value="nes" selected>上班路线查询</ion-option>
+      <ion-option value="n64">下班路线查询</ion-option>
+    </ion-select>
+    
+  </ion-navbar>
+</ion-header>
+<ion-content class="busline">
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      <p><button clear class="left busname" (click)="openDetailsPage(item)">{{item.busName}}</button> <span class="right">{{item.driver}}</span></p>
+      <p><span class="left">{{item.startStates}}</span><span class="right">{{item.numberPlate}}</span></p>
+      <button clear item-right (click)='showToolBar(item)'>
+      <ion-icon name="arrow-dropdown"></ion-icon>
+      </button>
+      <bus-toolbar *ngIf="item.showTool"></bus-toolbar>
+    </ion-item>
+</ion-list>
+
+</ion-content>
+

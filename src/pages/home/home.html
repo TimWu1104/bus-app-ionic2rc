@@ -1,0 +1,73 @@
+<ion-header>
+ <ion-navbar>
+    <ion-title>首页</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="home">
+
+<ion-list class="searchlist">
+  <ion-item>
+    <ion-label fixed> <ion-icon name='pin' item-left></ion-icon>家</ion-label>
+    <ion-input type="text" value="" placeholder="请输入地点"></ion-input>
+  </ion-item>
+  <button ion-button icon-only clear class="floatmidright">
+  <ion-icon name="repeat"></ion-icon>
+  </button>
+  <ion-item>
+    <ion-label fixed><ion-icon name='flag' item-left></ion-icon>公司</ion-label>
+    <ion-input type="text" placeholder="请输入地点"></ion-input>
+  </ion-item>
+</ion-list>
+
+<button ion-button full>路线查询</button>
+
+ <ion-list>
+  <ion-list-header>
+    常乘路线
+  </ion-list-header>
+   <ion-item>
+      <p><span class="left busname" >Dell 2号线</span> <span class="right">张三:18912345678</span></p>
+      <p><span class="left">光大国贸</span><span class="right">粤CYY123</span></p>
+      <button clear item-right>
+      <ion-icon name="arrow-dropdown"></ion-icon>
+      </button>
+      <bus-toolbar ></bus-toolbar>
+    </ion-item>
+</ion-list>
+<div class="clear space"></div>
+ <ion-list>
+  <ion-list-header>
+    搜索结果
+  </ion-list-header>
+  <ion-item>
+      Dell 1号线
+      <ion-note item-right>
+      08:10
+      </ion-note>
+    </ion-item>
+   <ion-item>
+      Dell 2号线
+      <ion-note item-right>
+      08:10
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      Dell 3号线
+      <ion-note item-right>
+      08:10
+      </ion-note>
+    </ion-item>
+     <ion-item>
+      Dell 4号线
+      <ion-note item-right>
+      08:10
+      </ion-note>
+    </ion-item>
+      <ion-item>
+      Dell 5号线
+      <ion-note item-right>
+      08:10
+      </ion-note>
+    </ion-item>
+</ion-list>
+</ion-content>
